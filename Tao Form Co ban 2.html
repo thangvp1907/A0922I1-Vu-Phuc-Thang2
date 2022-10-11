@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background: aliceblue;
+            width: 600px;
+            height: 500px;
+            margin: 0 auto;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            border: 5px black;
+        }
+        header{
+            background: burlywoodlue;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="header" style="background: orangered" align="center">Sở Thích Của Bạn</h1>
+    <form>
+        <table>
+            <tr>
+                <td><label><strong>Họ và Tên</strong></label></td>
+                <td colspan="3"><input class="name" type="text" name="yourname"</td><br>
+            </tr>
+            <tr>
+                <td><label><strong>Email</strong></label></td>
+                <td colspan="3"><input class="email" type="email" name="yourmail"</td><br>
+            </tr>
+            <tr>
+                <td><label><strong>Sở thích</strong></label></td>
+                <td><span><input class=<"radio_menu" type="checkbox" name="hobby"><label>Thể thao</label></span></td>
+                <td><input class="radio_menu" type="checkbox" name="hobby"><label>Âm nhạc</label></td>
+                <td><input class="radio_menu" type="checkbox" name="hobby"><label>Đọc Sách</label></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input class="radio_menu" type="checkbox" name="hobby">Lướt web</td>
+                <td><input class="radio_menu" type="checkbox" name="hobby">Chơi game</td>
+                <td><input class="radio_menu" type="checkbox" name="hobby">Điện ảnh</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input class="radio_menu" type="checkbox" name="hobby">Du lịch</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="submit" value="Gửi thông tin"></td>
+                <td><input type="reset" name="reset" value="Nhập lại"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
