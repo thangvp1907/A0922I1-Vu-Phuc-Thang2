@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .mid{
+            background: #f1f1ae;
+            width: 600px;
+            height: 500px;
+            margin: 0 auto;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            border: 5px black;
+        }
+        .header{
+            background: #c3f5c3;
+            color: blue;
+            width: 600px;
+            height:50px;
+            margin: 0 auto;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            border: 5px black;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<h1 class="header">ĐĂNG KÝ HỌC VIÊN</h1>
+<form class="mid" autocomplete="on">
+    <table>
+        <tr>
+            <td>Họ và tên</td>
+            <td colspan="3"><input class="name" type="text" name="tên" placeholder="Nhập họ và tên" required</td>
+        </tr>
+        <tr>
+            <td>Ngày sinh</td>
+            <td colspan="3"><input class="born" type="number" name="born"</td>
+        </tr>
+        <tr>
+            <td>Giới Tính</td>
+            <td colspan=""><input class="gender" type="radio" name="gender">Nam</td>
+            <td colspan=""><input class="gender" type="radio" name="gender">Nữ</td>
+            <td colspan=""><input class="gender" type="radio" name="gender">Khác</td>
+        </tr>
+        <tr>
+            <td>Địa chỉ</td>
+            <td colspan="3"><input class="address" type="text" name="local"></td>
+        </tr>
+        <tr>
+            <td><span>Lớp</span></td>
+            <td colspan="3">
+                <select name="Chọn Lớp">
+                <option value="value01">A09</option>
+                <option value="value02">A10</option>
+                <option value="value03">A11</option>
+                <option value="value04">A12</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td colspan="3"><input class="mail" type="email" name="mail" placeholder="Ronaldosiuuuu@gmail.com"></td>
+        </tr>
+        <tr>
+            <td>Điện Thoại</td>
+            <td colspan="3"><input class="number" type="number" name="number"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input class="submit" type="submit" name="submit" value="Đăng ký"></td>
+            <td><input class="reset" type="reset" name="" value="Reset"></td>
+        </tr>
+
+    </table>
+
+</form>
+
+
+</body>
+</html>
