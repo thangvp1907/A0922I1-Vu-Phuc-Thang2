@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 10px auto;
+    width: 200px;
+}
+.screen{
+    background: #f1ebeb;
+    width: 200px;
+    height: 50px;
+    position: relative;
+}
+.keyboard{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.item{
+    height: 50px;
+    outline: none;
+    border: 0.1px solid rgb(212,212,212);
+}
+.item:hover{
+    background-color: #faebd7;
+    cursor: pointer;
+}
+.item1{
+    background-color: #f896aa;
+    grid-column: 1/span 2;
+}
+.item1:hover{
+    background-color: #f8cad4;
+    cursor: pointer;
+}
+.item2{
+    background-color: #4ec3e0;
+}
+.item2:hover{
+    background-color: #addaee;
+    cursor: pointer;
+}
+.screen.input{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 40px;
+    color: black;
+    z-index: 222
+}

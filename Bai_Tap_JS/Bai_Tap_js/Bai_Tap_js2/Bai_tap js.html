@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhiệt độ Celsius </p>
+<input type="text" id="C"/><br>
+<br>
+<button onclick="C2F()">Đổi sang</button><br>
+<p id="average"></p>
+
+</body>
+<script>
+    function C2F () {
+        let Cel = document.getElementById ( "C" ).value;
+
+        var C2F = ( ( Cel * 9 ) / 5 + 32 );
+        document.getElementById ( "average" ).innerHTML = C2F;
+    }
+
+</script>
+</html>

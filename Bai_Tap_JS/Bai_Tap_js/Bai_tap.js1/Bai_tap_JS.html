@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinhdiem </title>
+
+</head>
+<body>
+Môn vật lí
+<input type="text" id="physics"/><br>
+<p>Môn Hóa học</p>
+<input type="text" id="chemisk" /><br>
+<p>Môn sinh học</p>
+<input type="text" id="biology"/><br>
+<button onclick="call()">Tính điểm</button>
+<p id="average"></p>
+</body>
+<script >
+    function call () {
+        let phy = + document.getElementById ( "physics" ).value
+        let che = + document.getElementById ( "chemisk" ).value
+        let bio = + document.getElementById ( "biology" ).value
+
+        var cal = ( phy + che + bio ) / 3;
+        document.getElementById ( "average" ).innerHTML = cal;
+    }
+</script>
+</html>
